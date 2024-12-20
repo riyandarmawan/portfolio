@@ -15,3 +15,7 @@ body {
 .highlight {
   @apply text-primary-100 font-medium;
 }
+
+.nav-active {
+  @apply !text-primary-300 before:!bg-primary-300 before:!w-20
+}

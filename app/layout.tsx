@@ -4,7 +4,9 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { MoveEffect } from "@/components/ui/MoveEffect";
 
-const inter = Inter({});
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",

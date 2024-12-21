@@ -8,19 +8,19 @@ import Nav from "./ui/Nav";
 const Profile = () => {
   return (
     <div className="h-screen py-20 flex flex-col justify-between">
-      <div>
+      <header>
         <h1 className="font-bold text-5xl">Riyan Darmawan</h1>
         <h5 className="font-medium text-xl text-primary-200 mt-2">
           Full-Stack Web Developer
         </h5>
         <p className="text-base text-primary-300 mt-3">
-          I craft <span className="highlight">responsive</span> and{" "}
-          <span className="highlight">user-friendly</span> web experiences that
-          deliver results.
+            I <span className="highlight">create websites</span> that are{" "}
+            <span className="highlight">easy to use</span> and{" "}
+            <span className="highlight">work well on all devices</span>.
         </p>
-      </div>
+      </header>
       <Nav />
-      <div>
+      <footer>
         <div className="flex items-center gap-4">
           <SocialMediaLink
             href="https://github.com/riyandarmawan"
@@ -45,7 +45,7 @@ const Profile = () => {
             <IoIosSend className="text-lg" />
           </MagicButton>
         </div>
-      </div>{" "}
+      </footer>{" "}
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Nav from "./ui/Nav";
 
 const Profile = () => {
   return (
-    <div className="h-screen py-20 flex flex-col justify-between">
+    <div className="h-screen py-20 flex flex-col justify-between sticky top-0 bottom-0">
       <header>
         <h1 className="font-bold text-5xl">Riyan Darmawan</h1>
         <h5 className="font-medium text-xl text-primary-200 mt-2">

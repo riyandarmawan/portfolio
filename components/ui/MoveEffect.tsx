@@ -29,7 +29,7 @@ export const MoveEffect = ({
   }
   return (
     <div
-      className={cn("fixed inset-0 group -z-10", containerClassName)}
+      className={cn("group -z-10", containerClassName)}
       onMouseMove={handleMouseMove}
     >
       <motion.div
@@ -52,7 +52,7 @@ export const MoveEffect = ({
         }}
       />
 
-      <div className={cn("relative w-screen h-screen", className)}>{children}</div>
+      <div className={cn("relative h-screen", className)}>{children}</div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 const Main = () => {
   return (
-    <main className="py-20">
-      <section id="about" className="text-primary-300">
+    <main className="bg-green-500">
+      <section id="about" className="text-primary-300 bg-red-500 h-screen pt-20">
         <p>
           Hi, I’m <span className="highlight">Riyan Darmawan</span>, a{" "}
           <span className="highlight">Full-Stack Web Developer</span>. I
@@ -40,6 +40,8 @@ const Main = () => {
           </span>
         </p>
       </section>
+      <section id="projects" className="bg-blue-500 h-screen pt-20"></section>
+      <section id="blogs" className="bg-yellow-500 h-screen pt-20"></section>
     </main>
   );
 };

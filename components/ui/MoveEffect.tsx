@@ -32,27 +32,28 @@ export const MoveEffect = ({
       className={cn("group -z-10", containerClassName)}
       onMouseMove={handleMouseMove}
     >
-      <motion.div
-        className="pointer-events-none bg-primary-900 dark:bg-primary-900 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
-        style={{
-          WebkitMaskImage: useMotionTemplate`
+      <div className={cn("relative", className)}>
+        <motion.div
+          className="pointer-events-none bg-primary-900 dark:bg-primary-900 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 -z-10"
+          style={{
+            WebkitMaskImage: useMotionTemplate`
             radial-gradient(
               500px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
           `,
-          maskImage: useMotionTemplate`
+            maskImage: useMotionTemplate`
             radial-gradient(
               500px circle at ${mouseX}px ${mouseY}px,
               black 0%,
               transparent 100%
             )
           `,
-        }}
-      />
-
-      <div className={cn("relative h-screen", className)}>{children}</div>
+          }}
+        />
+        {children}
+      </div>
     </div>
   );
 };

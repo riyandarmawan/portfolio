@@ -4,7 +4,9 @@ import React from "react";
 const Nav = () => {
   return (
     <nav className="flex flex-col gap-4">
-      <NavItem href="#about" active>About</NavItem>
+      <NavItem href="#about" active>
+        About
+      </NavItem>
       <NavItem href="#projects">Projects</NavItem>
       <NavItem href="#blogs">Blogs</NavItem>
       <NavItem href="#contact">Contact</NavItem>

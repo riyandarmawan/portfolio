@@ -1,6 +1,6 @@
 const Main = () => {
   return (
-    <main className="bg-green-500">
+    <main id="main" className="bg-green-500">
       <section id="about" className="text-primary-300 bg-red-500 h-screen pt-20">
         <p>
           Hi, I’m <span className="highlight">Riyan Darmawan</span>, a{" "}

@@ -1,5 +1,5 @@
 import Profile from "@/components/Profile";
-import Main from "@/components/ui/Main";
+import Main from "@/components/Main";
 
 export default function Home() {
   return (

@@ -2,7 +2,7 @@ import About from "./About";
 
 const Main = () => {
   return (
-    <main id="main" className="">
+    <main id="main">
       <About />
     </main>
   );

@@ -1,5 +1,6 @@
 "use client";
 
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React, { forwardRef, useEffect, useState } from "react";
 
@@ -11,11 +12,13 @@ const Nav = forwardRef<HTMLDivElement, NavProps>(({ show }, ref) => {
   return (
     <nav
       ref={ref}
-      className={`fixed right-8 bottom-20 p-4 rounded-md bg-primary-900 shadow-xl ${
+      className={`fixed md:relative md:!flex md:items-start md:bg-transparent md:inset-0 md:p-0 md:shadow-none right-8 bottom-20 p-4 rounded-md bg-primary-900 shadow-xl ${
         show ? "flex" : "hidden"
       } flex-col gap-2 px-8`}
     >
-      <NavItem href="#profile">Profile</NavItem>
+      <NavItem href="#profile" className="md:hidden">
+        Profile
+      </NavItem>
       <NavItem href="#about">About</NavItem>
       <NavItem href="#projects">Projects</NavItem>
       <NavItem href="#blogs">Blogs</NavItem>
@@ -29,9 +32,11 @@ Nav.displayName = `NavComponent`;
 const NavItem = ({
   href,
   children,
+  className,
 }: {
   href: string;
   children: React.ReactNode;
+  className?: string;
 }) => {
   const [activeSection, setActiveSection] = useState<string>("#about");
 
@@ -58,9 +63,12 @@ const NavItem = ({
   return (
     <Link
       href={href}
-      className={`hover:text-emerald-500 before:content-[''] text-primary-100 before:h-[1px] before:w-10 hover:before:w-20 before:bg-primary-400 hover:before:bg-emerald-500 before:duration-200 text-base font-semibold before:hidden text-center ${
-        activeSection === href ? "nav-active" : ""
-      }`}
+      className={cn(
+        `hover:text-secondary-500 before:content-[''] text-primary-100 before:h-[1px] before:w-10 hover:before:w-20 before:bg-primary-400 hover:before:bg-secondary-500 before:duration-200 text-base md:text-sm font-semibold text-center px-4 md:p-0 before:hidden md:before:inline-block md:flex md:items-center md:gap-4 md:uppercase lg:text-lg ${
+          activeSection === href ? "nav-active" : ""
+        }`,
+        className
+      )}
     >
       {children}
     </Link>
@@ -78,7 +86,7 @@ export const NavToggle = forwardRef<HTMLButtonElement, NavToggleProps>(
         ref={ref}
         type="button"
         onClick={handleClick}
-        className="w-14 h-14 fixed bottom-4 bg-primary-900 right-4 rounded-full grid place-items-center"
+        className="w-14 h-14 fixed bottom-4 bg-primary-900 right-4 rounded-full grid place-items-center md:hidden"
       >
         <span className="h-1 rounded-full w-6 bg-primary-100 before:rounded-full before:h-1 before:w-6 before:bg-primary-100 before:content-[''] before:translate-y-[150%] before:block after:rounded-full after:h-1 after:w-6 after:bg-primary-100 after:content-[''] after:-translate-y-[250%] after:block"></span>
       </button>

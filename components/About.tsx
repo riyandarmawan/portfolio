@@ -2,8 +2,8 @@ import React from 'react'
 
 const About = () => {
   return (
-    <section id="about" className="text-primary-300 pt-10">
-      <h3 className="mb-4 font-bold text-primary-200 text-xl">About</h3>
+    <section id="about" className="text-primary-300 pt-10 lg:pt-20 text-base lg:text-lg">
+      <h3 className="mb-4 font-bold text-primary-200 text-xl md:hidden">About</h3>
       <p>
         Hi, I’m <span className="highlight">Riyan Darmawan</span>, a{" "}
         <span className="highlight">Full-Stack Web Developer</span>. I

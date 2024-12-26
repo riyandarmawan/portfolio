@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-secondary-gradient {
+    background: conic-gradient(
+      from 90deg at 50% 50%, 
+      theme('colors.secondary.200') 0%, 
+      theme('colors.secondary.700') 50%, 
+      theme('colors.secondary.200') 100%
+    );
+  }
+}
+
 body {
   @apply bg-primary-950 dark:bg-primary-50 text-primary-50 dark:text-primary-950;
 }
@@ -13,9 +24,9 @@ body {
 }
 
 .highlight {
-  @apply text-emerald-500 font-medium;
+  @apply text-secondary-500 font-medium;
 }
 
 .nav-active {
-  @apply !text-emerald-500 before:!bg-emerald-500 before:!w-20
+  @apply !text-secondary-500 before:!bg-secondary-500 before:!w-20;
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import SocialMediaLink from "./ui/SocialMediaLink";
@@ -9,10 +9,30 @@ import Nav, { NavToggle } from "./ui/Nav";
 
 const Profile = () => {
   const [showNav, setShowNav] = useState(false);
+  const navRef = useRef<HTMLDivElement | null>(null);
+  const navToggleRef = useRef<HTMLButtonElement | null>(null);
 
   const handleClick = () => {
     setShowNav(!showNav);
-  }
+  };
+
+  const handleOutsideClick = (event: MouseEvent) => {
+    if (
+      navRef.current &&
+      !navRef.current.contains(event.target as Node) &&
+      navToggleRef.current &&
+      !navToggleRef.current.contains(event.target as Node)
+    ) {
+      setShowNav(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleOutsideClick);
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   return (
     <section id="profile" className="pt-10 flex flex-col justify-between gap-6">
@@ -27,8 +47,8 @@ const Profile = () => {
           <span className="highlight">work well on all devices</span>.
         </p>
       </header>
-        <Nav show={showNav} />
-        <NavToggle handleClick={handleClick} />
+      <Nav ref={navRef} show={showNav} />
+      <NavToggle ref={navToggleRef} handleClick={handleClick} />
       <footer>
         <div className="flex items-center gap-4">
           <SocialMediaLink

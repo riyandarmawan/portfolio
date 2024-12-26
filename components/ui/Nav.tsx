@@ -1,11 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { forwardRef, useEffect, useState } from "react";
 
-const Nav = ({show}: {show: boolean}) => {
+type NavProps = {
+  show: boolean;
+};
+
+const Nav = forwardRef<HTMLDivElement, NavProps>(({ show }, ref) => {
   return (
-    <nav className={`fixed right-8 bottom-20 p-4 rounded-md bg-primary-900 shadow-xl ${show ? 'flex' : 'hidden'} flex-col gap-2 px-8`}>
+    <nav
+      ref={ref}
+      className={`fixed right-8 bottom-20 p-4 rounded-md bg-primary-900 shadow-xl ${
+        show ? "flex" : "hidden"
+      } flex-col gap-2 px-8`}
+    >
       <NavItem href="#profile">Profile</NavItem>
       <NavItem href="#about">About</NavItem>
       <NavItem href="#projects">Projects</NavItem>
@@ -13,7 +22,9 @@ const Nav = ({show}: {show: boolean}) => {
       <NavItem href="#contact">Contact</NavItem>
     </nav>
   );
-};
+});
+
+Nav.displayName = `NavComponent`;
 
 const NavItem = ({
   href,
@@ -56,20 +67,25 @@ const NavItem = ({
   );
 };
 
-export const NavToggle = ({
-  handleClick,
-}: {
+type NavToggleProps = {
   handleClick: React.MouseEventHandler<HTMLButtonElement>;
-}) => {
-  return (
-    <button
-      type="button"
-      onClick={handleClick}
-      className="w-14 h-14 fixed bottom-4 bg-primary-900 right-4 rounded-full grid place-items-center"
-    >
-      <span className="h-1 rounded-full w-6 bg-primary-100 before:rounded-full before:h-1 before:w-6 before:bg-primary-100 before:content-[''] before:translate-y-[150%] before:block after:rounded-full after:h-1 after:w-6 after:bg-primary-100 after:content-[''] after:-translate-y-[250%] after:block"></span>
-    </button>
-  );
 };
+
+export const NavToggle = forwardRef<HTMLButtonElement, NavToggleProps>(
+  ({ handleClick }, ref) => {
+    return (
+      <button
+        ref={ref}
+        type="button"
+        onClick={handleClick}
+        className="w-14 h-14 fixed bottom-4 bg-primary-900 right-4 rounded-full grid place-items-center"
+      >
+        <span className="h-1 rounded-full w-6 bg-primary-100 before:rounded-full before:h-1 before:w-6 before:bg-primary-100 before:content-[''] before:translate-y-[150%] before:block after:rounded-full after:h-1 after:w-6 after:bg-primary-100 after:content-[''] after:-translate-y-[250%] after:block"></span>
+      </button>
+    );
+  }
+);
+
+NavToggle.displayName = "Nav Toggle Component";
 
 export default Nav;

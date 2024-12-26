@@ -13,9 +13,9 @@ body {
 }
 
 .highlight {
-  @apply text-primary-100 font-medium;
+  @apply text-emerald-500 font-medium;
 }
 
 .nav-active {
-  @apply !text-primary-300 before:!bg-primary-300 before:!w-20
+  @apply !text-emerald-500 before:!bg-emerald-500 before:!w-20
 }

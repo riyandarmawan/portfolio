@@ -41,7 +41,7 @@ const Profile = () => {
         <h5 className="font-medium text-lg lg:text-2xl text-primary-200 mt-2">
           Full-Stack Web Developer
         </h5>
-        <p className="text-base lg:text-lg text-primary-300 mt-3">
+        <p className="lg:text-lg text-primary-300 mt-3">
           I <span className="highlight">create websites</span> that are{" "}
           <span className="highlight">easy to use</span> and{" "}
           <span className="highlight">work well on all devices</span>.

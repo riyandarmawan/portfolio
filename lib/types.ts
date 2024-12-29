@@ -13,3 +13,9 @@ export type JourneyDataType = {
   description: string;
   techStacks: TechStackType;
 }[];
+
+export type SocialMediaDataType = {
+  id: number;
+  icon: JSX.Element;
+  link: string;
+}[];

@@ -2,10 +2,10 @@ import React from "react";
 import TechStack from "./TechStack";
 import { JourneyDataType } from "@/lib/types";
 
-const Timeline = ({ journeysData }: { journeysData: JourneyDataType }) => {
+const Timeline = ({ journeyDatas }: { journeyDatas: JourneyDataType }) => {
   return (
     <>
-      {journeysData.map(
+      {journeyDatas.map(
         ({ id, icon, period, title, description, techStacks }) => (
           <div key={id} className="flex gap-2">
             {icon}

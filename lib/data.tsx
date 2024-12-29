@@ -1,10 +1,16 @@
 import { HiBuildingOffice2 } from "react-icons/hi2";
-import { JourneyDataType } from "./types";
-import { FaGraduationCap } from "react-icons/fa";
+import { JourneyDataType, SocialMediaDataType } from "./types";
+import {
+  FaGithub,
+  FaGraduationCap,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
 
 const iconClass: string = "text-2xl text-primary-300";
 
-export const journeysData: JourneyDataType = [
+export const journeyDatas: JourneyDataType = [
   {
     id: 1,
     icon: <FaGraduationCap className={iconClass} />,
@@ -28,9 +34,65 @@ export const journeysData: JourneyDataType = [
     id: 2,
     icon: <HiBuildingOffice2 className={iconClass} />,
     period: "Oct - Dec 2023",
-    title: "PT. Pratama Solusi Teknologi (Internship) - Web Development",
+    title: "PT. Pratama Solusi Teknologi (Internship) - Web Developer",
     description:
       "Completed an internship focusing on developing a company profile website, gaining experience in web design and development.",
     techStacks: [{ id: 1, name: "CodeIgniter 4" }],
   },
+];
+
+export const socialMediaDatas: SocialMediaDataType = [
+  {
+    id: 1,
+    icon: <FaGithub />,
+    link: "https://github.com/riyandaramwan",
+  },
+  {
+    id: 2,
+    icon: <FaLinkedin />,
+    link: "https://linkedin.com/in/riyandaramwan",
+  },
+  {
+    id: 3,
+    icon: <FaInstagram />,
+    link: "https://instagram.com/riyandaramwan",
+  },
+  {
+    id: 4,
+    icon: <FaYoutube />,
+    link: "https://youtube.com/@riyandaramwan",
+  },
+];
+
+export const skills = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
 ];

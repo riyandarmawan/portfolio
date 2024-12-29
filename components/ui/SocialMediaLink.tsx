@@ -1,14 +1,23 @@
+import { SocialMediaDataType } from "@/lib/types";
+import Link from "next/link";
+
 const SocialMediaLink = ({
-  href,
-  icon,
+  socialMediaDatas,
 }: {
-  href: string;
-  icon: React.ReactNode;
+  socialMediaDatas: SocialMediaDataType;
 }) => {
   return (
-    <a href={href} className="text-2xl text-primary-400 hover:text-primary-200">
-      {icon}
-    </a>
+    <>
+      {socialMediaDatas.map(({ id, icon, link }) => (
+        <Link
+          key={id}
+          href={link}
+          className="text-2xl text-primary-400 hover:text-primary-200"
+        >
+          {icon}
+        </Link>
+      ))}
+    </>
   );
 };
 

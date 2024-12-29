@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { FaGithub, FaInstagram, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
 import SocialMediaLink from "./ui/SocialMediaLink";
 import MagicButton from "./ui/MagicButton";
 import Nav, { NavToggle } from "./ui/Nav";
+import { socialMediaDatas } from "@/lib/data";
 
 const Profile = () => {
   const [showNav, setShowNav] = useState(false);
@@ -51,22 +51,7 @@ const Profile = () => {
       <NavToggle ref={navToggleRef} handleClick={handleClick} />
       <footer>
         <div className="flex items-center gap-4">
-          <SocialMediaLink
-            href="https://github.com/riyandarmawan"
-            icon={<FaGithub />}
-          />
-          <SocialMediaLink
-            href="https://linkedin.com/in/riyandarmawan"
-            icon={<FaLinkedin />}
-          />
-          <SocialMediaLink
-            href="https://instagram.com/riyandarmawan"
-            icon={<FaInstagram />}
-          />
-          <SocialMediaLink
-            href="https://youtube.com/@riyandarmawan"
-            icon={<FaYoutube />}
-          />
+          <SocialMediaLink socialMediaDatas={socialMediaDatas}/>
         </div>
         <div className="flex items-center gap-4 mt-6">
           <MagicButton href="">

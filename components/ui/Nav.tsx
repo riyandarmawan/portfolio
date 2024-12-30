@@ -41,7 +41,8 @@ const NavItem = ({
   const [activeSection, setActiveSection] = useState<string>("#about");
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section");
+    const main = document.getElementById("main") || document;
+    const sections = main.querySelectorAll("section");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

@@ -11,7 +11,7 @@ export type JourneyDataType = {
   period: string;
   title: string;
   description: string;
-  techStacks: TechStackType;
+  techStacks?: TechStackType;
 }[];
 
 export type SocialMediaDataType = {

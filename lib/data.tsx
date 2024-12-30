@@ -66,8 +66,9 @@ export const socialMediaDatas: SocialMediaDataType = [
 ];
 
 export const skills = [
-  "typescript",
   "javascript",
+  "typescript",
+  "alpinedotjs",
   "java",
   "react",
   "html5",
@@ -80,10 +81,16 @@ export const skills = [
   "vercel",
   "git",
   "github",
-  "visualstudiocode",
   "figma",
   "php",
   "laravel",
+  "codeigniter",
   "mysql",
   "sqlite",
+  "visualstudiocode",
+  "linux",
+  "archlinux",
+  "neovim",
+  "bspwm",
+  "codewars",
 ];

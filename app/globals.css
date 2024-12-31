@@ -13,6 +13,11 @@
   }
 }
 
+:root {
+  --dark-bg-skill: theme('colors.primary.100');
+  --light-bg-skill: theme('colors.primary.900');
+}
+
 body {
   @apply bg-primary-950 dark:bg-primary-50 text-primary-50 dark:text-primary-950;
 }

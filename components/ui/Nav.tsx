@@ -12,7 +12,7 @@ const Nav = forwardRef<HTMLDivElement, NavProps>(({ show }, ref) => {
   return (
     <nav
       ref={ref}
-      className={`fixed md:relative md:!flex md:items-start md:bg-transparent md:inset-0 md:p-0 md:shadow-none right-8 bottom-20 p-4 rounded-md bg-primary-900 shadow-xl ${
+      className={`fixed md:relative md:!flex md:items-start md:bg-transparent md:inset-0 md:p-0 md:shadow-none right-8 bottom-20 p-4 rounded-md bg-primary-900 shadow-xl z-10 ${
         show ? "flex" : "hidden"
       } flex-col gap-2 px-8`}
     >

@@ -91,6 +91,7 @@ export const skills = [
   "linux",
   "archlinux",
   "neovim",
+  "vim",
   "bspwm",
   "codewars",
 ];

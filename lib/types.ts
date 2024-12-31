@@ -1,21 +1,16 @@
 import { JSX } from "react";
 
-export type TechStackType = {
-  id: number;
-  name: string;
-}[];
+export type TechStackType = string[];
 
 export type JourneyDataType = {
-  id: number;
   icon: JSX.Element;
   period: string;
   title: string;
   description: string;
-  techStacks?: TechStackType;
+  techStacks: TechStackType | [];
 }[];
 
 export type SocialMediaDataType = {
-  id: number;
   icon: JSX.Element;
   link: string;
 }[];

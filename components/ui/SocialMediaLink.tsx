@@ -8,9 +8,9 @@ const SocialMediaLink = ({
 }) => {
   return (
     <>
-      {socialMediaDatas.map(({ id, icon, link }) => (
+      {socialMediaDatas.map(({ icon, link }, index) => (
         <Link
-          key={id}
+          key={index}
           href={link}
           className="text-2xl text-primary-400 hover:text-primary-200"
         >

@@ -3,11 +3,13 @@ import TechStack from "./TechStack";
 import { JourneyDataType } from "@/lib/types";
 
 const Timeline = ({ journeyDatas }: { journeyDatas: JourneyDataType }) => {
+  console.log(journeyDatas);
+
   return (
     <>
       {journeyDatas.map(
-        ({ id, icon, period, title, description, techStacks }) => (
-          <div key={id} className="flex gap-2">
+        ({ icon, period, title, description, techStacks }, index) => (
+          <div key={index} className="flex gap-2">
             {icon}
             <div className="w-full">
               <span className="font-medium text-primary-300">{period}</span>

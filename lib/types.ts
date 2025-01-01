@@ -14,3 +14,8 @@ export type SocialMediaDataType = {
   icon: JSX.Element;
   link: string;
 }[];
+
+export type NavType = {
+  content: string,
+  href: string,
+}[];

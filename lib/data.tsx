@@ -1,5 +1,5 @@
 import { HiBuildingOffice2 } from "react-icons/hi2";
-import { JourneyDataType, SocialMediaDataType } from "./types";
+import { JourneyDataType, NavType, SocialMediaDataType } from "./types";
 import {
   FaGithub,
   FaGraduationCap,
@@ -90,7 +90,7 @@ export const skills = [
   "codewars",
 ];
 
-export const navDatas = [
+export const navDatas: NavType = [
   {content: 'About', href: '#about'},
   {content: 'Projects', href: '#projects'},
   {content: 'Blogs', href: '#blogs'},

@@ -10,7 +10,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ["class", "class"],
+  darkMode: ["selector"],
   theme: {
     container: {
       center: true,
@@ -24,8 +24,6 @@ export default {
     },
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
         primary: {
           DEFAULT: "#64748b",
           50: "#f8fafc",

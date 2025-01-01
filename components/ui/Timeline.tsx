@@ -3,8 +3,6 @@ import TechStack from "./TechStack";
 import { JourneyDataType } from "@/lib/types";
 
 const Timeline = ({ journeyDatas }: { journeyDatas: JourneyDataType }) => {
-  console.log(journeyDatas);
-
   return (
     <>
       {journeyDatas.map(

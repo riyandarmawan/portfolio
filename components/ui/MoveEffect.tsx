@@ -34,7 +34,7 @@ export const MoveEffect = ({
     >
       <div className={cn("relative", className)}>
         <motion.div
-          className="pointer-events-none bg-primary-900 dark:bg-primary-900 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 -z-10"
+          className="pointer-events-none bg-primary-100 dark:bg-primary-900 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 -z-10"
           style={{
             WebkitMaskImage: useMotionTemplate`
             radial-gradient(

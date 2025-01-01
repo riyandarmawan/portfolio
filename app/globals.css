@@ -5,21 +5,16 @@
 @layer utilities {
   .bg-secondary-gradient {
     background: conic-gradient(
-      from 90deg at 50% 50%, 
-      theme('colors.secondary.200') 0%, 
-      theme('colors.secondary.700') 50%, 
-      theme('colors.secondary.200') 100%
+      from 90deg at 50% 50%,
+      theme("colors.secondary.200") 0%,
+      theme("colors.secondary.700") 50%,
+      theme("colors.secondary.200") 100%
     );
   }
 }
 
-:root {
-  --dark-bg-skill: theme('colors.primary.100');
-  --light-bg-skill: theme('colors.primary.900');
-}
-
 body {
-  @apply bg-primary-950 dark:bg-primary-50 text-primary-50 dark:text-primary-950;
+  @apply dark:bg-primary-950 bg-primary-50 dark:text-primary-300 text-primary-700;
 }
 
 @layer base {

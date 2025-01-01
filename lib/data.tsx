@@ -89,3 +89,10 @@ export const skills = [
   "bspwm",
   "codewars",
 ];
+
+export const navDatas = [
+  {content: 'About', href: '#about'},
+  {content: 'Projects', href: '#projects'},
+  {content: 'Blogs', href: '#blogs'},
+  {content: 'Contact', href: '#contact'},
+];

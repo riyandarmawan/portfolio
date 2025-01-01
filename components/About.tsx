@@ -4,9 +4,9 @@ import Skills from "./Skills";
 
 const About = () => {
   return (
-    <section id="about" className="text-primary-300 py-10 lg:py-20">
+    <section id="about" className="py-10 lg:py-20">
       <div id="description">
-        <h3 className="mb-4 font-bold text-primary-200 text-xl md:hidden">
+        <h3 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
           About
         </h3>
         <p>

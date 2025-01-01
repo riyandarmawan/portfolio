@@ -6,7 +6,7 @@ const Journey = () => {
   return (
     <div
       id="journey"
-      className="py-10 text-primary-400 text-sm lg:text-base grid gap-6"
+      className="py-10 text-sm lg:text-base grid gap-6"
     >
       <Timeline journeyDatas={journeyDatas} />
     </div>

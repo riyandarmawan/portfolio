@@ -92,7 +92,7 @@ export const NavToggle = forwardRef<HTMLButtonElement, NavToggleProps>(
         ref={ref}
         type="button"
         onClick={handleClick}
-        className="w-14 h-14 fixed bottom-4 bg-primary-200 dark:bg-primary-800 right-4 rounded-full grid place-items-center md:hidden z-10"
+        className="w-14 h-14 fixed bottom-4 bg-primary-200 dark:bg-primary-800 right-4 rounded-full grid place-items-center md:hidden z-10 outline-none focus:ring focus:ring-primary-300 focus:dark:ring-primary-700"
       >
         <span className="h-1 rounded-full w-6 bg-primary-900 dark:bg-primary-100 before:rounded-full before:h-1 before:w-6 before:bg-primary-900 before:dark:bg-primary-100 before:content-[''] before:translate-y-[150%] before:block after:rounded-full after:h-1 after:w-6 after:bg-primary-900 after:dark:bg-primary-100 after:content-[''] after:-translate-y-[250%] after:block"></span>
       </button>

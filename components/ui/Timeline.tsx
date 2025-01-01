@@ -10,8 +10,10 @@ const Timeline = ({ journeyDatas }: { journeyDatas: JourneyDataType }) => {
           <div key={index} className="flex gap-2">
             {icon}
             <div className="w-full">
-              <span className="font-medium text-primary-300">{period}</span>
-              <h5 className="text-lg font-semibold text-primary-200 mt-2">
+              <span className="font-medium text-primary-700 dark:text-primary-300">
+                {period}
+              </span>
+              <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800 mt-2">
                 {title}
               </h5>
               <p className="mt-1">{description}</p>

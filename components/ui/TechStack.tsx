@@ -7,7 +7,7 @@ const TechStack = ({ techStacks }: { techStacks: TechStackType }) => {
       {techStacks.map((name, index) => (
         <span
           key={index}
-          className="py-1 px-3 bg-secondary-500 bg-opacity-30 rounded-full inline-block text-primary-300 font-medium shadow text-sm"
+          className="py-1 px-3 bg-secondary-500 bg-opacity-30 rounded-full inline-block dark:text-primary-300 text-priamry-700 font-medium shadow text-sm"
         >
           {name}
         </span>

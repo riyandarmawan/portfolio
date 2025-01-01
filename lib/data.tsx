@@ -8,7 +8,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-const iconClass: string = "text-2xl text-primary-300";
+const iconClass: string = "text-2xl dark:text-primary-300 text-primary-700";
 
 export const journeyDatas: JourneyDataType = [
   {

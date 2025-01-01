@@ -12,7 +12,7 @@ const SocialMediaLink = ({
         <Link
           key={index}
           href={link}
-          className="text-2xl text-primary-400 hover:text-primary-200"
+          className="text-2xl text-primary-600 hover:text-primary-800 dark:text-primary-400 hover:dark:text-primary-200"
         >
           {icon}
         </Link>

@@ -19,3 +19,11 @@ export type NavType = {
   content: string,
   href: string,
 }[];
+
+export type ProjectType = {
+  img?: string,
+  title: string,
+  href?: string,
+  description: string,
+  techStacks: TechStackType,
+}[];

@@ -3,7 +3,7 @@ import React from "react";
 
 const TechStack = ({ techStacks }: { techStacks: TechStackType }) => {
   return (
-    <>
+    <div className="flex gap-1 flex-wrap">
       {techStacks.map((name, index) => (
         <span
           key={index}
@@ -12,7 +12,7 @@ const TechStack = ({ techStacks }: { techStacks: TechStackType }) => {
           {name}
         </span>
       ))}
-    </>
+    </div>
   );
 };
 

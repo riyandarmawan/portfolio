@@ -16,10 +16,8 @@ const Timeline = ({ journeyDatas }: { journeyDatas: JourneyDataType }) => {
               <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800 mt-2">
                 {title}
               </h5>
-              <p className="mt-1">{description}</p>
-              <div className="mt-4 flex gap-1 flex-wrap">
+              <p className="mt-1 mb-2">{description}</p>
                 <TechStack techStacks={techStacks} />
-              </div>
             </div>
           </div>
         )

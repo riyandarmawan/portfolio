@@ -1,5 +1,5 @@
 import { HiBuildingOffice2 } from "react-icons/hi2";
-import { JourneyDataType, NavType, SocialMediaDataType } from "./types";
+import { JourneyDataType, NavType, ProjectType, SocialMediaDataType } from "./types";
 import {
   FaGithub,
   FaGraduationCap,
@@ -91,8 +91,25 @@ export const skills = [
 ];
 
 export const navDatas: NavType = [
-  {content: 'About', href: '#about'},
-  {content: 'Projects', href: '#projects'},
-  {content: 'Blogs', href: '#blogs'},
-  {content: 'Contact', href: '#contact'},
+  { content: "About", href: "#about" },
+  { content: "Projects", href: "#projects" },
+  { content: "Blogs", href: "#blogs" },
+  { content: "Contact", href: "#contact" },
+];
+
+export const projectDatas: ProjectType = [
+  {
+    title: "List of Lit",
+    href: "https://riyandarmawan.github.io/list-of-lit",
+    description:
+      "It's an easy way to find any book you're interested in. Just enter the title and author, and you'll get a description, publisher, and more!",
+    techStacks: [
+      "Next.js",
+      "Tailwind CSS",
+      "Aceternity UI",
+      "Framer Motion",
+      "Magic UI",
+      "Shadcn UI",
+    ],
+  },
 ];

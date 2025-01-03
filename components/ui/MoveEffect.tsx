@@ -29,12 +29,12 @@ export const MoveEffect = ({
   }
   return (
     <div
-      className={cn("group -z-10", containerClassName)}
+      className={cn("group/move-effect -z-10", containerClassName)}
       onMouseMove={handleMouseMove}
     >
       <div className={cn("relative", className)}>
         <motion.div
-          className="pointer-events-none bg-primary-200 dark:bg-primary-900 absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100 -z-10"
+          className="pointer-events-none bg-primary-200 dark:bg-primary-900 absolute inset-0 opacity-0 transition duration-300 group-hover/move-effect:opacity-100 -z-10"
           style={{
             WebkitMaskImage: useMotionTemplate`
             radial-gradient(

@@ -21,7 +21,7 @@ export type NavType = {
 }[];
 
 export type ProjectType = {
-  img?: string,
+  img: string,
   title: string,
   href?: string,
   description: string,

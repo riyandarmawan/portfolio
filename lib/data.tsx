@@ -99,17 +99,15 @@ export const navDatas: NavType = [
 
 export const projectDatas: ProjectType = [
   {
+    img: "/img/projects/list-of-lit.png",
     title: "List of Lit",
     href: "https://riyandarmawan.github.io/list-of-lit",
     description:
       "It's an easy way to find any book you're interested in. Just enter the title and author, and you'll get a description, publisher, and more!",
     techStacks: [
-      "Next.js",
+      "React JS",
       "Tailwind CSS",
-      "Aceternity UI",
-      "Framer Motion",
-      "Magic UI",
-      "Shadcn UI",
+      "Google Books API",
     ],
   },
 ];

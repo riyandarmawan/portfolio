@@ -21,6 +21,7 @@ const Nav = forwardRef<HTMLDivElement, NavProps>(({ show }, ref) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(`#${entry.target.id}`);
+            window.history.replaceState(null, "", `#${entry.target.id}`);
           }
         });
       },
@@ -67,7 +68,7 @@ const NavItem = ({
     <Link
       href={href}
       className={cn(
-        `hover:text-secondary-500 before:content-[''] text-primary-900 dark:text-primary-100 
+        `hover:md:text-secondary-500 before:content-[''] text-primary-900 dark:text-primary-100 
      before:h-[1px] before:w-10 hover:before:w-20 before:bg-primary-900 
      before:dark:bg-primary-100 hover:before:bg-secondary-500 before:duration-200 
      text-base md:text-sm font-semibold text-center px-4 md:p-0 before:hidden 

@@ -6,9 +6,6 @@ const About = () => {
   return (
     <section id="about" className="py-10 lg:py-20">
       <div id="description">
-        <h3 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
-          About
-        </h3>
         <p>
           Hi, I’m <span className="highlight">Riyan Darmawan</span>, a{" "}
           <span className="highlight">Full-Stack Web Developer</span>. I

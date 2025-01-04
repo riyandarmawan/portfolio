@@ -72,7 +72,7 @@ const NavItem = ({
      before:h-[1px] before:w-10 hover:before:w-20 before:bg-primary-900 
      before:dark:bg-primary-100 hover:before:bg-secondary-500 before:duration-200 
      text-base md:text-sm font-semibold text-center px-4 md:p-0 before:hidden 
-     md:before:inline-block md:flex md:items-center md:gap-4 md:uppercase lg:text-lg`,
+     md:before:inline-block md:flex md:items-center md:gap-4 md:uppercase`,
         { "nav-active": active },
         className
       )}

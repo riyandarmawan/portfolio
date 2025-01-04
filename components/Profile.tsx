@@ -37,11 +37,11 @@ const Profile = () => {
   return (
     <section id="profile" className="pt-10 md:pb-10 lg:py-20 flex flex-col justify-between md:sticky md:inset-y-0 md:h-screen gap-6">
       <header>
-        <h1 className="font-bold text-3xl lg:text-5xl text-primary-900 dark:text-primary-100">Riyan Darmawan</h1>
-        <h5 className="font-medium text-lg lg:text-2xl text-primary-800 dark:text-primary-200 mt-2">
+        <h1 className="font-bold text-2xl lg:text-3xl text-primary-900 dark:text-primary-100">Riyan Darmawan</h1>
+        <h5 className="font-medium lg:text-lg text-primary-800 dark:text-primary-200 mt-2">
           Full-Stack Web Developer
         </h5>
-        <p className="lg:text-lg mt-3">
+        <p className="mt-3">
           I <span className="highlight">create websites</span> that are{" "}
           <span className="highlight">easy to use</span> and{" "}
           <span className="highlight">work well on all devices</span>.

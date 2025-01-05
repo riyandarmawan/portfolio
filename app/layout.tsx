@@ -28,7 +28,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <MoveEffect>{children}</MoveEffect>
+          <MoveEffect>
+            <div className="container flex flex-col md:flex-row justify-center gap-12">
+              {children}
+            </div>
+          </MoveEffect>
         </ThemeProvider>
       </body>
     </html>

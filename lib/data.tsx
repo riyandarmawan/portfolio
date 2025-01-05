@@ -97,10 +97,10 @@ export const skills = [
 ];
 
 export const navDatas: NavType = [
-  { content: "About", href: "#about" },
-  { content: "Projects", href: "#projects" },
-  { content: "Blogs", href: "#blogs" },
-  { content: "Contact", href: "#contact" },
+  { content: "About", href: "/#about" },
+  { content: "Projects", href: "/#projects" },
+  { content: "Blogs", href: "/#blogs" },
+  { content: "Contact", href: "/#contact" },
 ];
 
 export const projectDatas: ProjectType = [

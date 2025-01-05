@@ -33,13 +33,13 @@ const Blogs = () => {
           ></div>
 
           <div
-            className="absolute inset-0 -z-10 group-hover/blog:bg-primary-900/60"
+            className="absolute inset-0 -z-10 group-hover/blog:bg-primary-400/60 group-hover/blog:dark:bg-primary-900/60"
             style={{
               transition: "background-color 0.3s ease",
             }}
           ></div>
 
-          <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800">
+          <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800 lg:line-clamp-1">
             {title}
           </h5>
         </Link>

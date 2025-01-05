@@ -32,12 +32,16 @@ body {
 }
 
 .blog {
+  h2, h3 {
+    @apply dark:text-primary-200 text-primary-800 font-semibold mb-2
+  }
+
   h2 {
-    @apply text-primary-200 font-semibold text-lg mb-2
+    @apply text-lg md:text-xl
   }
 
   h3 {
-    @apply text-primary-200 font-semibold mb-2
+    @apply text-lg
   }
 
   main {

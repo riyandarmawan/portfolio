@@ -30,3 +30,17 @@ body {
 .nav-active {
   @apply !text-secondary-500 before:!bg-secondary-500 before:!w-20;
 }
+
+.blog {
+  h2 {
+    @apply text-primary-200 font-semibold text-lg mb-2
+  }
+
+  h3 {
+    @apply text-primary-200 font-semibold mb-2
+  }
+
+  main {
+    @apply grid gap-4;
+  }
+}

@@ -14,15 +14,15 @@ const Projects = () => {
       {projectDatas.map(
         ({ img, title, href, description, techStacks }, index) => (
           <Link
-            target="_black"
+            target="_blank"
             href={href || "#"}
             key={index}
-            className="flex flex-col lg:flex-row gap-4 rounded-md hover:bg-secondary-500 duration-300 hover:bg-opacity-10 backdrop-blur p-4 group/project lg:items-center"
+            className="flex flex-col lg:flex-row gap-4 rounded-md hover:bg-secondary-500 duration-300 hover:bg-opacity-10 backdrop-blur p-2 md:p-4 group/project lg:items-center"
           >
-            <div className="h-36 aspect-video border border-primary-900 dark:border-primary-100 shadow-md rounded-md">
+            <div className="h-36 aspect-video border border-primary-300 dark:border-primary-700 shadow-md rounded-md">
               <Image
                 src={img}
-                alt={description}
+                alt={title}
                 width={1280}
                 height={720}
                 className="object-cover w-full h-full rounded-md"

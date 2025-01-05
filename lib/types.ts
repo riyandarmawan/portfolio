@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import React, { JSX } from "react";
 
 export type TechStackType = string[];
 
@@ -16,14 +16,24 @@ export type SocialMediaDataType = {
 }[];
 
 export type NavType = {
-  content: string,
-  href: string,
+  content: string;
+  href: string;
 }[];
 
 export type ProjectType = {
-  img: string,
-  title: string,
-  href?: string,
-  description: string,
-  techStacks: TechStackType,
+  img: string;
+  title: string;
+  href?: string;
+  description: string;
+  techStacks: TechStackType;
+}[];
+
+export type BlogType = {
+  img: string;
+  title: string;
+  slug: string;
+  author: string;
+  date: Date;
+  content: React.ReactElement;
+  tags: TechStackType;
 }[];

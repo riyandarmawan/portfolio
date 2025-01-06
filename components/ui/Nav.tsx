@@ -15,13 +15,13 @@ const Nav = forwardRef<HTMLDivElement, NavProps>(({ show }, ref) => {
   useEffect(() => {
     const sections = document
       .getElementById("main")
-      ?.querySelectorAll("section");
+      ?.querySelectorAll("section.main-section");
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-            window.history.replaceState(null, "", `#${entry.target.id}`);
+            setActiveSection(`/#${entry.target.id}`);
+            window.history.replaceState(null, "", `/#${entry.target.id}`);
           }
         });
       },

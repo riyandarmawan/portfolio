@@ -4,7 +4,7 @@ import React from 'react'
 
 const Blogs = () => {
   return (
-    <section id="blogs" className="py-10 lg:py-20 grid gap-4">
+    <section id="blogs" className="py-10 lg:py-20 grid gap-4 main-section">
       <h3 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
         Blogs
       </h3>

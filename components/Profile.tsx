@@ -59,7 +59,7 @@ const Profile = () => {
           <SocialMediaLink socialMediaDatas={socialMediaDatas} />
         </div>
         <div className="flex items-center gap-4 mt-6">
-          <MagicButton href="{resume}">
+          <MagicButton href={resume}>
             Resume
             <IoIosSend className="text-lg lg:text-xl" />
           </MagicButton>

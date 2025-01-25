@@ -5,7 +5,7 @@ import { IoIosSend } from "react-icons/io";
 import SocialMediaLink from "./ui/SocialMediaLink";
 import MagicButton from "./ui/MagicButton";
 import Nav, { NavToggle } from "./ui/Nav";
-import { socialMediaDatas } from "@/lib/data";
+import { socialMediaDatas, resume } from "@/lib/data";
 
 const Profile = () => {
   const [showNav, setShowNav] = useState(false);
@@ -59,7 +59,7 @@ const Profile = () => {
           <SocialMediaLink socialMediaDatas={socialMediaDatas} />
         </div>
         <div className="flex items-center gap-4 mt-6">
-          <MagicButton href="">
+          <MagicButton href="{resume}">
             Resume
             <IoIosSend className="text-lg lg:text-xl" />
           </MagicButton>

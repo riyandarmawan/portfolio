@@ -49,21 +49,25 @@ export const journeyDatas: JourneyDataType = [
 export const socialMediaDatas: SocialMediaDataType = [
   {
     icon: <FaGithub />,
-    link: "https://github.com/riyandaramwan",
+    link: "https://github.com/riyandarmawan",
   },
   {
     icon: <FaLinkedin />,
-    link: "https://linkedin.com/in/riyandaramwan",
+    link: "https://linkedin.com/in/riyandarmawan",
   },
   {
     icon: <FaInstagram />,
-    link: "https://instagram.com/riyandaramwan",
+    link: "https://instagram.com/riyandarmawan",
   },
   {
     icon: <FaYoutube />,
-    link: "https://youtube.com/@riyandaramwan",
+    link: "https://youtube.com/@riyandarmawan",
   },
 ];
+
+export const resume: string = {
+  href: "/resume.pdf"
+}
 
 export const skills = [
   "javascript",

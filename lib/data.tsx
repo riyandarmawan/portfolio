@@ -65,9 +65,7 @@ export const socialMediaDatas: SocialMediaDataType = [
   },
 ];
 
-export const resume: string = {
-  href: "/resume.pdf"
-}
+export const resume: string = "/resume.pdf";
 
 export const skills = [
   "javascript",

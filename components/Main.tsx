@@ -9,7 +9,12 @@ const Main = () => {
       <About />
       <Projects />
       <Blogs />
-      <Contact/>
+      <Contact />
+      <footer className="pt-16 pb-10">
+        <p className="text-center text-sm">
+          Riyan Darmawan &copy; {new Date().getFullYear()} | All right reserved.
+        </p>
+      </footer>
     </main>
   );
 };

@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-10 lg-py-20">
+    <section id="contact" className="py-10 lg:py-20">
       <h3 className="mb-6 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
         Contact
       </h3>
@@ -68,7 +68,7 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          className="mt-6 bg-primary-600 text-white py-2 px-4 rounded shadow hover:bg-primary-700 transition w-full"
+          className="mt-6 bg-secondary-500 text-white py-2 px-4 rounded shadow hover:bg-secondary-600 transition w-full"
           disabled={status === "loading"}
         >
           {status === "loading" ? "Sending..." : "Send Message"}

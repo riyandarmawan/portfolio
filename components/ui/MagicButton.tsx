@@ -1,13 +1,16 @@
 const MagicButton = ({
   href,
+  target,
   children,
 }: {
   href?: string;
+  target?: '_blank';
   children: React.ReactNode;
 }) => {
   return (
     <a
       href={href}
+      target={target}
       className="relative inline-flex h-12 overflow-hidden rounded p-[1px]"
     >
       <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-secondary-gradient" />

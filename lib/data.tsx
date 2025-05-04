@@ -19,10 +19,10 @@ const iconClass: string = "text-2xl dark:text-primary-300 text-primary-700";
 export const journeyDatas: JourneyDataType = [
   {
     icon: <FaGraduationCap className={iconClass} />,
-    period: "2022 - Present",
+    period: "2022 - 2025",
     title: "SMK Bina Kerja Purwakarta - Software Engineering",
     description:
-      "Currently studying web development at SMK Bina Kerja Purwakarta, focusing on building and designing websites and learning to create functional and user-friendly web applications.",
+      "Studied web development at SMK Bina Kerja Purwakarta, focusing on building and designing websites and learning to create functional and user-friendly web applications.",
     techStacks: [
       "HTML",
       "CSS",
@@ -38,11 +38,11 @@ export const journeyDatas: JourneyDataType = [
   },
   {
     icon: <HiBuildingOffice2 className={iconClass} />,
-    period: "Oct - Dec 2023",
-    title: "PT. Pratama Solusi Teknologi (Internship) - Web Developer",
+    period: "Oct 2024 - Dec 2023",
+    title: "PT. Pratama Solusi Teknologi - Web Developer Intern",
     description:
       "Completed an internship focusing on developing a company profile website, gaining experience in web design and development.",
-    techStacks: ["CodeIgniter 4"],
+    techStacks: ["CodeIgniter 4", "Bootstrap"],
   },
 ];
 
@@ -65,7 +65,7 @@ export const socialMediaDatas: SocialMediaDataType = [
   },
 ];
 
-export const resume: string = "/resume.pdf";
+export const resume: string = "https://riyandarmawan-resume.vercel.app";
 
 export const skills = [
   "javascript",
@@ -96,6 +96,7 @@ export const skills = [
   "vim",
   "bspwm",
   "codewars",
+  "nestjs",
 ];
 
 export const navDatas: NavType = [

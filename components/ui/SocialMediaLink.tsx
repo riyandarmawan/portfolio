@@ -12,6 +12,7 @@ const SocialMediaLink = ({
         <Link
           key={index}
           href={link}
+          target="_blank"
           className="text-2xl text-primary-600 hover:text-primary-800 dark:text-primary-400 hover:dark:text-primary-200"
         >
           {icon}

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import About from "./About";
 import Blogs from "./Blogs";
 import Contact from "./Contact";
@@ -12,7 +13,7 @@ const Main = () => {
       <Contact />
       <footer className="pt-16 pb-10">
         <p className="text-center text-sm">
-          Riyan Darmawan &copy; {new Date().getFullYear()} | All right reserved.
+          <Link href="https://instagram.com/riyandarmawan" className="hover:underline font-medium">Riyan Darmawan</Link> &copy; {new Date().getFullYear()} | All right reserved.
         </p>
       </footer>
     </main>

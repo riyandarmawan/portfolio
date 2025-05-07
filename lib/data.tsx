@@ -18,8 +18,16 @@ const iconClass: string = "text-2xl dark:text-primary-300 text-primary-700";
 
 export const journeyDatas: JourneyDataType = [
   {
+    icon: <HiBuildingOffice2 className={iconClass} />,
+    period: "Oct 2023 - Dec 2023",
+    title: "PT. Pratama Solusi Teknologi - Web Developer Intern",
+    description:
+      "Completed an internship focusing on developing a company profile website, gaining experience in web design and development.",
+    techStacks: ["CodeIgniter 4", "Bootstrap"],
+  },
+  {
     icon: <FaGraduationCap className={iconClass} />,
-    period: "2022 - 2025",
+    period: "Jul 2022 - May 2025",
     title: "SMK Bina Kerja Purwakarta - Software Engineering",
     description:
       "Studied web development at SMK Bina Kerja Purwakarta, focusing on building and designing websites and learning to create functional and user-friendly web applications.",
@@ -35,14 +43,6 @@ export const journeyDatas: JourneyDataType = [
       "Git",
       "GitHub",
     ],
-  },
-  {
-    icon: <HiBuildingOffice2 className={iconClass} />,
-    period: "Oct 2024 - Dec 2023",
-    title: "PT. Pratama Solusi Teknologi - Web Developer Intern",
-    description:
-      "Completed an internship focusing on developing a company profile website, gaining experience in web design and development.",
-    techStacks: ["CodeIgniter 4", "Bootstrap"],
   },
 ];
 
@@ -133,101 +133,103 @@ export const projectDatas: ProjectType = [
   },
 ];
 
-export const blogDatas: BlogType = [{
-  img: "/img/blogs/5-tips-to-boost-productivity-in-your-daily-routine.jpg",
-  title: "5 Tips to Boost Productivity in Your Daily Routine",
-  slug: "5-tips-to-boost-productivity-in-your-daily-routine",
-  author: 'Riyan Darmawan',
-  date: new Date(2025, 0, 5),
-  content: (
-    <>
-      <section>
-        <p>
-          In today’s fast-paced world, staying productive can feel like an
-          uphill battle. Whether you&apos;re a student, professional, or
-          entrepreneur, finding ways to maximize your time and energy is
-          crucial. In this blog post, we’ll explore five practical tips that can
-          help you supercharge your daily routine and get more done without
-          burning out.
-        </p>
-      </section>
+export const blogDatas: BlogType = [
+  {
+    img: "/img/blogs/5-tips-to-boost-productivity-in-your-daily-routine.jpg",
+    title: "5 Tips to Boost Productivity in Your Daily Routine",
+    slug: "5-tips-to-boost-productivity-in-your-daily-routine",
+    author: "Riyan Darmawan",
+    date: new Date(2025, 0, 5),
+    content: (
+      <>
+        <section>
+          <p>
+            In today’s fast-paced world, staying productive can feel like an
+            uphill battle. Whether you&apos;re a student, professional, or
+            entrepreneur, finding ways to maximize your time and energy is
+            crucial. In this blog post, we’ll explore five practical tips that
+            can help you supercharge your daily routine and get more done
+            without burning out.
+          </p>
+        </section>
 
-      <section>
-        <h2>Tip 1: Start Your Day with a Plan</h2>
-        <p>
-          Planning your day the night before can help you wake up with a clear
-          focus. Create a to-do list with your top priorities and allocate time
-          blocks for each task. Tools like Google Calendar or productivity apps
-          like Todoist can make this process seamless.
-        </p>
-      </section>
+        <section>
+          <h2>Tip 1: Start Your Day with a Plan</h2>
+          <p>
+            Planning your day the night before can help you wake up with a clear
+            focus. Create a to-do list with your top priorities and allocate
+            time blocks for each task. Tools like Google Calendar or
+            productivity apps like Todoist can make this process seamless.
+          </p>
+        </section>
 
-      <section>
-        <h2>Tip 2: Practice the 80/20 Rule</h2>
-        <p>
-          The Pareto Principle, or 80/20 rule, suggests that 80% of your results
-          come from 20% of your efforts. Identify the tasks that yield the most
-          significant outcomes and focus your energy there. This helps eliminate
-          time-wasting activities.
-        </p>
-      </section>
+        <section>
+          <h2>Tip 2: Practice the 80/20 Rule</h2>
+          <p>
+            The Pareto Principle, or 80/20 rule, suggests that 80% of your
+            results come from 20% of your efforts. Identify the tasks that yield
+            the most significant outcomes and focus your energy there. This
+            helps eliminate time-wasting activities.
+          </p>
+        </section>
 
-      <section>
-        <h2>Tip 3: Take Breaks Using the Pomodoro Technique</h2>
-        <p>
-          Working for long periods without breaks can lead to fatigue. Try the
-          Pomodoro Technique: work for 25 minutes, then take a 5-minute break.
-          After four cycles, take a longer 15-30 minute break. This method
-          improves focus while preventing burnout.
-        </p>
-      </section>
+        <section>
+          <h2>Tip 3: Take Breaks Using the Pomodoro Technique</h2>
+          <p>
+            Working for long periods without breaks can lead to fatigue. Try the
+            Pomodoro Technique: work for 25 minutes, then take a 5-minute break.
+            After four cycles, take a longer 15-30 minute break. This method
+            improves focus while preventing burnout.
+          </p>
+        </section>
 
-      <section>
-        <h2>Tip 4: Eliminate Distractions</h2>
-        <p>
-          Distractions are the enemy of productivity. Turn off non-essential
-          notifications, set boundaries with coworkers or family members, and
-          designate a clutter-free workspace. Apps like Freedom or Focus@Will
-          can help block digital distractions.
-        </p>
-      </section>
+        <section>
+          <h2>Tip 4: Eliminate Distractions</h2>
+          <p>
+            Distractions are the enemy of productivity. Turn off non-essential
+            notifications, set boundaries with coworkers or family members, and
+            designate a clutter-free workspace. Apps like Freedom or Focus@Will
+            can help block digital distractions.
+          </p>
+        </section>
 
-      <section>
-        <h2>Tip 5: Reflect and Adjust</h2>
-        <p>
-          At the end of each day, spend 5-10 minutes reflecting on what worked
-          and what didn’t. Adjust your approach for the next day to continuously
-          improve your productivity strategies.
-        </p>
-      </section>
+        <section>
+          <h2>Tip 5: Reflect and Adjust</h2>
+          <p>
+            At the end of each day, spend 5-10 minutes reflecting on what worked
+            and what didn’t. Adjust your approach for the next day to
+            continuously improve your productivity strategies.
+          </p>
+        </section>
 
-      <section>
-        <h2>Conclusion</h2>
-        <p>
-          Boosting productivity doesn’t require a complete life overhaul—it’s
-          about making small, intentional changes to your daily habits. By
-          incorporating these tips into your routine, you’ll not only achieve
-          more but also enjoy greater balance and fulfillment.
-        </p>
-      </section>
+        <section>
+          <h2>Conclusion</h2>
+          <p>
+            Boosting productivity doesn’t require a complete life overhaul—it’s
+            about making small, intentional changes to your daily habits. By
+            incorporating these tips into your routine, you’ll not only achieve
+            more but also enjoy greater balance and fulfillment.
+          </p>
+        </section>
 
-      <section>
-        <h3>Call to Action</h3>
-        <p>
-          What’s your go-to productivity hack? Share it in the comments below!
-          And if you found these tips helpful, don’t forget to subscribe to our
-          blog for more insights.
-        </p>
-      </section>
-    </>
-  ),
-  tags: [
-    "Productivity",
-    "Time Management",
-    "Self-Improvement",
-    "Daily Habits",
-    "Pomodoro Technique",
-    "Goal Setting",
-    "Work-Life Balance",
-  ],
-}];
+        <section>
+          <h3>Call to Action</h3>
+          <p>
+            What’s your go-to productivity hack? Share it in the comments below!
+            And if you found these tips helpful, don’t forget to subscribe to
+            our blog for more insights.
+          </p>
+        </section>
+      </>
+    ),
+    tags: [
+      "Productivity",
+      "Time Management",
+      "Self-Improvement",
+      "Daily Habits",
+      "Pomodoro Technique",
+      "Goal Setting",
+      "Work-Life Balance",
+    ],
+  },
+];

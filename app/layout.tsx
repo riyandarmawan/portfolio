@@ -28,7 +28,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <MoveEffect>
+          <MoveEffect className="min-h-dvh">
             <div className="container flex flex-col md:flex-row justify-center gap-12">
               {children}
             </div>

@@ -1,5 +1,6 @@
 import { Base64 } from "js-base64";
 import { Octokit } from "octokit";
+import { revalidatePath } from 'next/cache';
 
 const octokit = new Octokit({ auth: process.env.GITHUB_API_KEY });
 

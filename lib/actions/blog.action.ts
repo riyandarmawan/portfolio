@@ -1,6 +1,5 @@
 import { Base64 } from "js-base64";
 import { Octokit } from "octokit";
-import { revalidatePath } from 'next/cache';
 
 const octokit = new Octokit({ auth: process.env.GITHUB_API_KEY });
 
@@ -79,7 +78,6 @@ export async function getAllBlogs(): Promise<
 
     const encoded = res.data.content;
     const decoded = Base64.decode(encoded);
-    await revalidatePath('/'); 
     return JSON.parse(decoded);
   } catch (error) {
     console.error(error);

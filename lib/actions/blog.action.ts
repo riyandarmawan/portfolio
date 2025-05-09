@@ -78,6 +78,7 @@ export async function getAllBlogs(): Promise<
 
     const encoded = res.data.content;
     const decoded = Base64.decode(encoded);
+    await revalidatePath('/'); 
     return JSON.parse(decoded);
   } catch (error) {
     console.error(error);

@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
@@ -59,11 +58,15 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       height: {
-        '54': '13.5rem',
+        "54": "13.5rem",
       },
     },
   },
-  plugins: [addVariablesForColors, require("tailwindcss-animate")],
+  plugins: [
+    addVariablesForColors,
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography"),
+  ],
 } satisfies Config;
 
 function addVariablesForColors({ addBase, theme }: any) {

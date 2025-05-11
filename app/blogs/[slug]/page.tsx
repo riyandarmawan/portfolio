@@ -2,11 +2,17 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 import { getBlogContent } from "@/lib/actions/blog.action";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
-import { getBlogMetadata } from "@/lib/actions/blog.action";
-import type {Metadata} from "next"
 
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const blog = await getBlogMetadata((await params).slug);
+import type { Metadata } from "next";
+import { getBlogMetadata } from "@/lib/actions/blog.action";
+
+type Params = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  const { slug } = await params;
+  const blog = await getBlogMetadata(slug);
 
   return {
     title: blog.title,
@@ -25,17 +31,11 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const slug = (await params).slug;
+export default async function Page({ params }: Params) {
+  const { slug } = await params;
   const blog = await getBlogContent(slug);
 
-  if (!blog) {
-    return;
-  }
+  if (!blog) return null;
 
   return (
     <div className="py-10 text-primary-700 dark:text-primary-300 blog md:w-2/3">
@@ -52,3 +52,4 @@ export default async function Page({
     </div>
   );
 }
+

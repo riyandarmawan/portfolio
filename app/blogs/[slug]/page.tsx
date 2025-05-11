@@ -46,7 +46,7 @@ export default async function Page({ params }: Params) {
           { label: `/${slug}`, href: `/blogs/${slug}`, active: true },
         ]}
       />
-      <article className="prose dark:prose-invert">
+      <article className="prose dark:prose-invert blog">
         <ReactMarkdown rehypePlugins={[rehypeRaw]}>{blog}</ReactMarkdown>
       </article>
     </div>

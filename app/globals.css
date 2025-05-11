@@ -48,3 +48,9 @@ body {
     @apply grid gap-4;
   }
 }
+
+article.blog {
+  img {
+  @apply rounded shadow;
+  }
+}

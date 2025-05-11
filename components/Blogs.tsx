@@ -2,6 +2,8 @@ import { getAllBlogs } from "@/lib/actions/blog.action";
 import Link from "next/link";
 import React from "react";
 
+export const dynamic = "force-dynamic";
+
 const Blogs = async () => {
   const blogs = await getAllBlogs();
 
@@ -19,7 +21,7 @@ const Blogs = async () => {
             transition: "background 0.3s ease",
           }}
         >
-          <p className="mix-blend-difference">{date}</p>
+          <p>{date}</p>
           <div
             className="absolute inset-0 -z-10 bg-cover bg-center opacity-0 group-hover/blog:opacity-100"
             style={{

@@ -97,7 +97,7 @@ if(!blog) {
 
   return blog;
   } catch (error) {
-    consle.error("Failed to get blog metadata:", error);
+    console.error("Failed to get blog metadata:", error);
     throw error;
   }
 }

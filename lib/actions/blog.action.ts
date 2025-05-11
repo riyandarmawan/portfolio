@@ -84,3 +84,20 @@ export async function getAllBlogs(): Promise<
     throw error;
   }
 }
+
+export async function getBlogMetadata(slug: string): Promise<{slug: string; title: string; img: string; date: string}> {
+  try {
+  const blogs = await getAllBlogs();
+
+  const blog = blogs.find(blog => blog.slug === slug);
+
+if(!blog) {
+    throw new Error(`Blog metadata not found for slug: ${slug}`);
+  }
+
+  return blog;
+  } catch (error) {
+    consle.error("Failed to get blog metadata:", error);
+    throw error;
+  }
+}

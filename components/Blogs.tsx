@@ -2,8 +2,6 @@ import { getAllBlogs } from "@/lib/actions/blog.action";
 import Link from "next/link";
 import React from "react";
 
-export const revalidate = 60;
-
 const Blogs = async () => {
   const blogs = await getAllBlogs();
 

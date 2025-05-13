@@ -12,7 +12,7 @@ type Params = {
 
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { slug } = params;
+  const { slug } = await params;
   const blog = await getBlogMetadata(slug);
 
   const title = blog.title ?? "Untitled Blog";

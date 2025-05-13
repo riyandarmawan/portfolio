@@ -44,7 +44,7 @@ export async function getBlogContent(slug: string) {
 }
 
 export async function getAllBlogs(): Promise<
-  { slug: string; title: string; img: string; date: string }[]
+  { slug: string; title: string; img: string; date: string; description: string }[]
 > {
   try {
     const res = await octokit.request(
@@ -91,7 +91,7 @@ export async function getAllBlogs(): Promise<
   }
 }
 
-export async function getBlogMetadata(slug: string): Promise<{slug: string; title: string; img: string; date: string}> {
+export async function getBlogMetadata(slug: string): Promise<{slug: string; title: string; img: string; date: string; description: string}> {
   try {
   const blogs = await getAllBlogs();
 

@@ -10,26 +10,40 @@ type Params = {
   params: Promise<{ slug: string }>;
 };
 
+
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const { slug } = await params;
+  const { slug } = params;
   const blog = await getBlogMetadata(slug);
 
+  const title = blog.title ?? "Untitled Blog";
+  const description =
+    blog.description ??
+    `Explore insights from "${title}", published on ${blog.date}.`;
+
   return {
-    title: blog.title,
-    description: `Read ${blog.title} published on ${blog.date}`,
+    title,
+    description,
     openGraph: {
-      title: blog.title,
-      description: `Read ${blog.title}`,
-      images: [{ url: blog.img, alt: blog.title }],
+      title,
+      description,
+      type: "article",
+      publishedTime: new Date(blog.date).toISOString(),
+      images: [
+        {
+          url: blog.img,
+          alt: title,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title: blog.title,
-      description: `Read ${blog.title}`,
+      title,
+      description,
       images: [blog.img],
     },
   };
 }
+
 
 export default async function Page({ params }: Params) {
   const { slug } = await params;

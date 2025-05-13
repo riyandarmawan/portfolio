@@ -78,7 +78,13 @@ export async function getAllBlogs(): Promise<
 
     const encoded = res.data.content;
     const decoded = Base64.decode(encoded);
-    return JSON.parse(decoded);
+    const blogs = JSON.parse(decoded);
+
+    blogs.sort((a: {date: string}, b: {date: string}) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    })
+
+    return blogs;
   } catch (error) {
     console.error(error);
     throw error;

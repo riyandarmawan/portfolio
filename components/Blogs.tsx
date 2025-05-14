@@ -35,7 +35,7 @@ const Blogs = async () => {
             }}
           ></div>
 
-          <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800 lg:line-clamp-1">
+          <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800">
             {title}
           </h5>
         </Link>

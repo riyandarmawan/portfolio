@@ -19,7 +19,7 @@ const Blogs = async () => {
             transition: "background 0.3s ease",
           }}
         >
-          <p>{date}</p>
+          <p className="min-w-32">{date}</p>
           <div
             className="absolute inset-0 -z-10 bg-cover bg-center opacity-0 group-hover/blog:opacity-100"
             style={{
@@ -35,7 +35,7 @@ const Blogs = async () => {
             }}
           ></div>
 
-          <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800">
+          <h5 className="text-lg font-semibold dark:text-primary-200 text-primary-800 lg:line-clamp-1">
             {title}
           </h5>
         </Link>

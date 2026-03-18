@@ -13,7 +13,7 @@ const Main = () => {
       <Contact />
       <footer className="pt-16 pb-10">
         <p className="text-center text-sm">
-          <Link href="https://instagram.com/riyandarmawan" className="hover:underline font-medium">Riyan Darmawan</Link> &copy; {new Date().getFullYear()} | All right reserved.
+          <Link href="https://linkedin.com/in/riyandarmawan" className="hover:underline font-medium">Riyan Darmawan</Link> &copy; {new Date().getFullYear()} | All right reserved.
         </p>
       </footer>
     </main>

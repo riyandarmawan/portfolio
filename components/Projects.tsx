@@ -8,9 +8,9 @@ import Image from "next/image";
 const Projects = () => {
   return (
     <section id="projects" className="py-10 lg:py-20 grid gap-4 main-section">
-      <h3 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
+      <h2 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
         Projects
-      </h3>
+      </h2>
       {projectDatas.map(
         ({ img, title, href, description, techStacks }, index) => (
           <Link

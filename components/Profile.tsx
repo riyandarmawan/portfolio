@@ -44,12 +44,12 @@ const Profile = () => {
           Riyan Darmawan
         </h1>
         <h5 className="font-medium lg:text-lg text-primary-800 dark:text-primary-200 mt-2">
-          Full-Stack Web Developer
+          Full-Stack Developer | Mechatronics & AI Student
         </h5>
         <p className="mt-3">
-          I <span className="highlight">create websites</span> that are{" "}
-          <span className="highlight">easy to use</span> and{" "}
-          <span className="highlight">work well on all devices</span>.
+          Based in <span className="highlight">Purwakarta, West Java</span>,
+          I create <span className="highlight">high-performance web applications</span>
+          and explore the intersection of <span className="highlight">Mechatronics and AI</span>.
         </p>
       </header>
       <Nav ref={navRef} show={showNav} />

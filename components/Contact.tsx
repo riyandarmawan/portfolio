@@ -35,9 +35,9 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-10 lg:py-20 main-section">
-      <h3 className="mb-6 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
+      <h2 className="mb-6 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
         Contact
-      </h3>
+      </h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email" className="font-medium">

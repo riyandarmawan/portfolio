@@ -5,10 +5,18 @@ import Skills from "./Skills";
 const About = () => {
   return (
     <section id="about" className="py-10 lg:py-20 main-section">
-      <h3 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
+      <h2 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
         About
-      </h3>
+      </h2>
       <div id="description">
+        <p>
+          Hi, I’m <span className="highlight">Riyan Darmawan</span>, a{" "}
+          <span className="highlight">Full-Stack Web Developer</span> and{" "}
+          <span className="highlight">Mechatronics & AI student</span> at Universitas Pendidikan Indonesia.
+          I specialize in creating websites that are{" "}
+          <span className="highlight">easy to use</span> and{" "}
+          <span className="highlight">look great on any device</span>.
+        </p>
         <p>
           Hi, I’m <span className="highlight">Riyan Darmawan</span>, a{" "}
           <span className="highlight">Full-Stack Web Developer</span>. I

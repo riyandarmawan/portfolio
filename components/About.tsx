@@ -16,14 +16,7 @@ const About = () => {
           I specialize in creating websites that are{" "}
           <span className="highlight">easy to use</span> and{" "}
           <span className="highlight">look great on any device</span>.
-        </p>
-        <p>
-          Hi, I’m <span className="highlight">Riyan Darmawan</span>, a{" "}
-          <span className="highlight">Full-Stack Web Developer</span>. I
-          specialize in creating websites that are{" "}
-          <span className="highlight">easy to use</span> and{" "}
-          <span className="highlight">look great on any device</span>. I work on
-          both the <span className="highlight">front-end</span> (what users see)
+          I work on both the <span className="highlight">front-end</span> (what users see)
           and <span className="highlight">back-end</span> (the parts that run
           behind the scenes) to make sure everything functions smoothly. My goal
           is to build websites that are not only{" "}

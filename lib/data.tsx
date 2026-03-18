@@ -11,18 +11,37 @@ import {
   FaInstagram,
   FaLinkedin,
   FaYoutube,
+  FaUser
 } from "react-icons/fa";
 
 const iconClass: string = "text-2xl dark:text-primary-300 text-primary-700";
 
 export const journeyDatas: JourneyDataType = [
   {
-    icon: <HiBuildingOffice2 className={iconClass} />,
-    period: "Oct 2023 - Dec 2023",
-    title: "PT. Pratama Solusi Teknologi - Web Developer Intern",
-    description:
-      "Completed an internship focusing on developing a company profile website, gaining experience in web design and development.",
-    techStacks: ["CodeIgniter 4", "Bootstrap"],
+    icon: <FaUser className={iconClass} />,
+    period: "Jan 2026 - Present",
+    title: "HIMATRONIKA-AI - Science, Research, and Technology Department",
+    description: "Leading technical initiatives within the student association to bridge the gap between academic theory and practical robotics applications.",
+    techStacks: [
+      "ESP8266",
+      "Computer Vision",
+      "Leadership",
+      "People Management",
+    ]
+  },
+  {
+    icon: <FaGraduationCap className={iconClass} />,
+    period: "Jul 2025 - Present",
+    title: "Universitas Pendidikan Indonesia - Mechatronics and AI",
+    description: "Focused on the intersection of procedural logic and data persistence. Engineered a CLI-based Village Administration System using C, implementing relational data structures with 'structs' and a Primary Key (NIK) system to maintain referential integrity across population and tax modules. Developed a 'Load-Modify-Save' lifecycle for persistent file storage, ensuring consistent state management between system memory and disk data.",
+    techStacks: [
+      "C",
+      "micro:bit",
+      "Wiring",
+      "Engineering Mathematics",
+      "Electrical Circuits",
+      "Elektronics",
+    ],
   },
   {
     icon: <FaGraduationCap className={iconClass} />,
@@ -42,6 +61,14 @@ export const journeyDatas: JourneyDataType = [
       "Git",
       "GitHub",
     ],
+  },
+  {
+    icon: <HiBuildingOffice2 className={iconClass} />,
+    period: "Oct 2023 - Dec 2023",
+    title: "PT. Pratama Solusi Teknologi - Web Developer Intern",
+    description:
+      "Completed an internship focusing on developing a company profile website, gaining experience in web design and development.",
+    techStacks: ["CodeIgniter 4", "Bootstrap"],
   },
 ];
 

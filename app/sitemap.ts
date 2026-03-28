@@ -1,11 +1,11 @@
-t
+
 import { MetadataRoute } from 'next';
 import { Octokit } from 'octokit';
 
 const siteUrl = 'https://riyandarmawan.vercel.app';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const octokit = new Octokit();
+  const octokit = new Octokit({ auth: process.env.GITHUB_API_KEY });
   const repos = await octokit.request('GET /repos/{owner}/{repo}/contents/blogs', {
     owner: 'riyandarmawan',
     repo: 'blogs',

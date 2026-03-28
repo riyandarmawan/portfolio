@@ -8,7 +8,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const octokit = new Octokit();
   const repos = await octokit.request('GET /repos/{owner}/{repo}/contents/blogs', {
     owner: 'riyandarmawan',
-    repo: 'next-portfolio',
+    repo: 'portfolio',
   });
 
   const posts = repos.data.map((repo: any) => ({

@@ -135,9 +135,9 @@ export const projectDatas: ProjectType = [
   {
     img: "/img/projects/next-gen-portfolio.png",
     title: "Next Gen Portfolio",
-    href: "https://github.com/riyandarmawan/next-portfolio",
+    href: "https://github.com/riyandarmawan/portfolio",
     description: "This is the next-generation portfolio of Riyan Darmawan, designed to showcase my skills and projects in a modern and interactive way.",
-    techStacks: ["Next.js", "TypeScript", "Tailwind CSS", "Contentlayer"],
+    techStacks: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
     img: "/img/projects/list-of-lit.png",

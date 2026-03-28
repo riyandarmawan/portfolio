@@ -11,14 +11,13 @@ import {
   FaInstagram,
   FaLinkedin,
   FaYoutube,
-  FaUser
 } from "react-icons/fa";
 
 const iconClass: string = "text-2xl dark:text-primary-300 text-primary-700";
 
 export const journeyDatas: JourneyDataType = [
   {
-    icon: <FaUser className={iconClass} />,
+    icon: <HiBuildingOffice2 className={iconClass} />,
     period: "Jan 2026 - Present",
     title: "HIMATRONIKA-AI - Science, Research, and Technology Department",
     description: "Leading technical initiatives within the student association to bridge the gap between academic theory and practical robotics applications.",

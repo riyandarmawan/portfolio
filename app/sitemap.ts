@@ -1,13 +1,19 @@
 
 import { MetadataRoute } from 'next';
-import { Post, allPosts } from 'contentlayer/generated';
+import { Octokit } from 'octokit';
 
 const siteUrl = 'https://riyandarmawan.vercel.app';
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const posts = allPosts.map((post: Post) => ({
-    url: `${siteUrl}/blogs/${post.slug}`,
-    lastModified: post.date,
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const octokit = new Octokit();
+  const repos = await octokit.request('GET /repos/{owner}/{repo}/contents/blogs', {
+    owner: 'riyandarmawan',
+    repo: 'next-portfolio',
+  });
+
+  const posts = repos.data.map((repo: any) => ({
+    url: `${siteUrl}/blogs/${repo.name.replace('.mdx', '')}`,
+    lastModified: new Date().toISOString().split('T')[0],
   }));
 
   const routes = ['', '/blogs'].map((route) => ({

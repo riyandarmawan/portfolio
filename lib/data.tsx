@@ -134,11 +134,18 @@ export const navDatas: NavType = [
 
 export const projectDatas: ProjectType = [
   {
+    img: "/img/projects/next-gen-portfolio.png",
+    title: "Next Gen Portfolio",
+    href: "https://github.com/riyandarmawan/next-portfolio",
+    description: "This is the next-generation portfolio of Riyan Darmawan, designed to showcase my skills and projects in a modern and interactive way.",
+    techStacks: ["Next.js", "TypeScript", "Tailwind CSS", "Contentlayer"],
+  },
+  {
     img: "/img/projects/list-of-lit.png",
     title: "List of Lit",
     href: "https://riyandarmawan.github.io/list-of-lit",
     description:
-      "This is an efficient method for locating a book of interest. Simply enter the title and author, and you will receive a description, publisher, and additional information.",
+      "This is an efficient method for locating a book of interest, created by Riyan Darmawan. Simply enter the title and author, and you will receive a description, publisher, and additional information.",
     techStacks: ["React JS", "Tailwind CSS", "Google Books API"],
   },
   {
@@ -146,7 +153,7 @@ export const projectDatas: ProjectType = [
     title: "Ruang Baca",
     href: "https://github.com/riyandarmawan/ruang-baca",
     description:
-      "This web application is designed to assist school librarians in managing their book collections and facilitating user borrowing.",
+      "This web application, developed by Riyan Darmawan, is designed to assist school librarians in managing their book collections and facilitating user borrowing.",
     techStacks: ["Laravel", "Tailwind CSS", "Alpine JS"],
   },
   {
@@ -154,7 +161,7 @@ export const projectDatas: ProjectType = [
     title: "Table Service",
     href: "https://github.com/riyandarmawan/table-service",
     description:
-      "This application dashboard is designed to help manage your restaurant. It offers features such as order management, transaction tracking, and separate roles for different users.",
+      "This application dashboard, a project by Riyan Darmawan, is designed to help manage your restaurant. It offers features such as order management, transaction tracking, and separate roles for different users.",
     techStacks: ["Laravel", "Tailwind CSS", "Alpine JS", "SweetAlert2"],
   },
 ];

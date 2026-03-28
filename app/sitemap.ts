@@ -1,13 +1,19 @@
-import { MetadataRoute } from 'next'
+
+import { MetadataRoute } from 'next';
+import { Post, allPosts } from 'contentlayer/generated';
+
+const siteUrl = 'https://riyandarmawan.vercel.app';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://riyandarmawan.vercel.app',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    // If you have dynamic blog routes later, you'd add them here
-  ]
+  const posts = allPosts.map((post: Post) => ({
+    url: `${siteUrl}/blogs/${post.slug}`,
+    lastModified: post.date,
+  }));
+
+  const routes = ['', '/blogs'].map((route) => ({
+    url: `${siteUrl}${route}`,
+    lastModified: new Date().toISOString().split('T')[0],
+  }));
+
+  return [...routes, ...posts];
 }

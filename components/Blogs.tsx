@@ -7,7 +7,7 @@ const Blogs = async () => {
 
   return (
     <section id="blogs" className="py-10 lg:py-20 grid gap-4 main-section">
-      <h2 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl md:hidden">
+      <h2 className="mb-4 font-bold text-primary-800 dark:text-primary-200 text-xl">
         Blogs
       </h2>
       {blogs.map(({ img, title, slug, date }, index) => (

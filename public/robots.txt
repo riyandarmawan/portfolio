@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://riyandarmawan.vercel.app/sitemap.xml

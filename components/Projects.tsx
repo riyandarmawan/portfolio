@@ -15,6 +15,7 @@ const Projects = () => {
         ({ img, title, href, description, techStacks }, index) => (
           <Link
             target="_blank"
+            rel="noopener noreferrer"
             href={href || "#"}
             key={index}
             className="flex flex-col lg:flex-row gap-4 rounded-md hover:bg-secondary-500 duration-300 hover:bg-opacity-10 backdrop-blur p-2 md:p-4 group/project lg:items-center"

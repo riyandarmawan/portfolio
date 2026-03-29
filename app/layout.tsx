@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Riyan Darmawan | Full-stack Developer & Mechatronics Student",
+  title: "Riyan Darmawan | Full-stack Developer & Mechatronics & AI Student",
   description:
     "Official portfolio of Riyan Darmawan, a Mechatronics and AI student at UPI and Full-stack Developer specializing in React, Next.js, and Laravel.",
   authors: [{ name: "Riyan Darmawan", url: "https://riyandarmawan.vercel.app" }],

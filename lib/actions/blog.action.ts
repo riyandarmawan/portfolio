@@ -10,7 +10,7 @@ export async function getBlogContent(slug: string) {
       {
         owner: "riyandarmawan",
         repo: "blogs",
-        path: `blogs/${slug}.mdx`,
+        path: `${slug}.mdx`,
       }
     );
 

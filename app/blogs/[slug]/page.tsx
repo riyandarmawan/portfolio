@@ -51,7 +51,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 }
 
 export default async function Page({ params }: Params) {
-  const { slug } = params;
+  const { slug } = await params;
   const blogContent = await getBlogContent(slug);
   const blogMetadata = await getBlogMetadata(slug);
 
